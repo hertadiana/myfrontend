@@ -20,7 +20,7 @@ const AddReview = props => {
                 rating,
                 text
             };
-            await axios.post(`http://localhost:5001/reviews/${id}`, postData);
+            await axios.post(`http://16.171.2.241:3000/reviews/${id}`, postData);
           } catch (error) {
             console.error('Error:', error);
           }

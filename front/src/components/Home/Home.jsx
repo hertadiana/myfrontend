@@ -40,7 +40,7 @@ const Home = props => {
                 
         try {
           const token = localStorage.getItem('token');
-          const response = await axios.get('http://localhost:5001/books', {
+          const response = await axios.get('http://16.171.2.241:3000/books', {
             headers: {
               Authorization: `Bearer ${token}`
             }
@@ -105,7 +105,7 @@ const Home = props => {
             try {
                 const token = localStorage.getItem('token');
 
-                await axios.delete(`http://localhost:5001/books/${bookIdToDelete}`, {
+                await axios.delete(`http://16.171.2.241:3000/books/${bookIdToDelete}`, {
                     headers: {
                       Authorization: `Bearer ${token}`
                     }

@@ -24,7 +24,7 @@ const EditReview = props => {
                 rating,
                 text
             };
-            await axios.put(`http://localhost:5001/reviews/${bookId}/${reviewId}`, json);
+            await axios.put(`http://16.171.2.241:3000/reviews/${bookId}/${reviewId}`, json);
           } catch (error) {
             console.error('Error updating element:', error);
           }

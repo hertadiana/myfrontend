@@ -9,7 +9,7 @@ function Login() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:5001/login', { email, password });
+      const response = await axios.post('http://16.171.2.241:3000/login', { email, password });
       localStorage.setItem('token', response.data.token);
       localStorage.setItem('id', response.data.id);
       setMessage('Login successful!');

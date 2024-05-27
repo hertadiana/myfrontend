@@ -13,7 +13,7 @@ function Register() {
       console.log("Email:", email);
       console.log("Password:", password);
 
-      const response = await axios.post('http://localhost:5001/register', { email, password });
+      const response = await axios.post('http://16.171.2.241:3000/register', { email, password });
 
       console.log("Server response received");
 

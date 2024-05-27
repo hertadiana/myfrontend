@@ -53,7 +53,7 @@ const EditBook = props => {
                 releaseYear: book.getReleaseYear()
 
             };
-            await axios.put(`http://localhost:5001/books/${book.getId()}`, json);
+            await axios.put(`http://16.171.2.241:3000/books/${book.getId()}`, json);
           } catch (error) {
             console.error('Error updating element:', error);
           }

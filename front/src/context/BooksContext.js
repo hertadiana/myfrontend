@@ -9,7 +9,7 @@ export const useBooks = () => useContext(BooksContext);
 export const fetchData = async () => {
     let bookEntities = [];
     try {
-      const response = await axios.get('http://localhost:5001/books');
+      const response = await axios.get('http://16.171.2.241:3000/books');
 
       for (const book of response.data) {
         bookEntities.push(new Book(book.id, book.title, book.author, book.releaseYear));
