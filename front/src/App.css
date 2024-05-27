@@ -1,0 +1,66 @@
+.App {
+  padding: 3em;
+}
+
+.online-status {
+  background: red;
+  padding: 1em;
+  text-align: center;
+  color: #fff;
+}
+
+button {
+  background-color: #673ab7 !important; 
+  color: white !important;
+}
+
+button:hover {
+  background-color: #9c27b0 !important;
+}
+
+.submit-button {
+  display: block !important;
+  margin-top: 2em !important;
+}
+
+.opposite-color-button {
+  background-color: #9c27b0 !important; /* primary color */
+  color: white !important;
+}
+
+.opposite-color-button:hover {
+  background-color: #673ab7 !important; /* primary color */
+}
+
+.add-button {
+  margin-bottom: 2em !important;
+}
+
+.edit-form {
+  margin-bottom: 2em;
+}
+
+.Home .container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.Home .container .left, .Home .container .right {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.Home .container .left {
+  flex-direction: column;
+}
+
+.Home .container .right {
+  /* transform: scale(1.3); */
+}
+
+.MuiChartsLegend-series {
+  margin-left: 5em !important;
+  display: none;
+}
