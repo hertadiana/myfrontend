@@ -29,7 +29,7 @@ const AddBook = props => {
         try {
             const token = localStorage.getItem('token');
             
-            await axios.post(`http://16.171.2.241:3000/books`, bookToAdd, {
+            await axios.post(`https://16.171.2.241:3000/books`, bookToAdd, {
                 headers: {
                   Authorization: `Bearer ${token}`
                 }

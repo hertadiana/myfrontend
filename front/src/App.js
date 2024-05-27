@@ -35,7 +35,7 @@ function App() {
 
   const checkServerStatus = async () => {
     try {
-      const response = await axios.get('http://16.171.2.241:3000/status');
+      const response = await axios.get('https://16.171.2.241:3000/status');
 
       if (response.status === 200) {
         setIsOnline(true);
